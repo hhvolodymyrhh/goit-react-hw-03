@@ -1,0 +1,18 @@
+.form{
+border: 1px solid #000;
+border-radius: 5px;
+display: flex;
+flex-direction: column;
+text-align: start;
+padding:5px;
+}
+
+.field{
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.btn{
+  margin-top: 10px;
+}

@@ -1,17 +1,15 @@
 import css from './Contact.module.css'
 
-function Contact({ data: {name, number } }) {
+function Contact({ data: {name, number, id}, onDelete }) {
 
   return (
-    <>
-      <div className="container">
-        <div className="wrap">
-          <p className="name">{name}</p>
-          <p className='number'>{number}</p>
+      <div className={css.container}>
+        <div className={css.wrap}>
+          <p className={css.name}>{name}</p>
+          <p className={css.number}>{number}</p>
         </div>
-        <button className='onDelete'>Delete</button>
+        <button className={css.onDelete} onClick={()=>{onDelete(id)}}>Delete</button>
       </div>
-    </>
   )
 }
 
