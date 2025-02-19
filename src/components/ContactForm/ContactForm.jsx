@@ -23,7 +23,7 @@ function ContactForm({ onAdd }) {
 
   const FeedbackSchema = Yup.object().shape({
     username: Yup.string()
-      .min(2, "Too Short!")
+      .min(3, "Too Short!")
       .max(50, "Too Long!")
       .required("Required"),
     number: Yup.string()
